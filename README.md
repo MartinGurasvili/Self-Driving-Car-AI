@@ -5,7 +5,7 @@
 
 <div align="center">
   <a href="https://github.com/MartinGurasvili/Calculator">
-    <img width="300" height="300" alt="cas" src="https://user-images.githubusercontent.com/76784461/197058245-3999a55d-e0ff-4951-b054-bc2e970c0bcf.png">
+    <img width="250" height="250" alt="cas" src="https://user-images.githubusercontent.com/76784461/197058245-3999a55d-e0ff-4951-b054-bc2e970c0bcf.png">
   </a>
 
 
