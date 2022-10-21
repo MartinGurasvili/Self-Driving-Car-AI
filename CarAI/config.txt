@@ -1,7 +1,7 @@
 [NEAT]
 fitness_criterion     = max
-fitness_threshold     = 100000000
-pop_size              = 30
+fitness_threshold     = 1000000000000
+pop_size              = 100
 reset_on_extinction   = True
 
 [DefaultGenome]
@@ -67,7 +67,7 @@ weight_mutate_rate      = 0.8
 weight_replace_rate     = 0.1
 
 [DefaultSpeciesSet]
-compatibility_threshold = 2.0
+compatibility_threshold = 3.0
 
 [DefaultStagnation]
 species_fitness_func = max
