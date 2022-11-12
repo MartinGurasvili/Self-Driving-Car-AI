@@ -30,12 +30,13 @@
 <h2 align="center">Race The AI</h2>
 <img width="80%" src="https://user-images.githubusercontent.com/76784461/197297360-beb8d8d0-b821-4977-9bfc-605b249bc487.png">
 <h2 align="center">Inner Works</h2>
-<img width="80%" src="https://user-images.githubusercontent.com/76784461/197297725-68daafd6-4986-481c-acce-121c05e689e8.png">
+<img width="80%" src="https://user-images.githubusercontent.com/76784461/201476174-4e2852f1-a02e-401c-8fee-e93920431534.png">
 <p align="center">
-    Input: distance from border - Left - Right and Infront <br>
-    Output: angle to turn  - Left or Right<br>
+    Input: 7 distance from border <br>
+    Output: 3 angle to turn  - Left or Right and speed to travel <br>
     TANH - Function<br>
     Using 100 starting cars - the best variations are mutated for the cars to stay alive for longer in the next generation<br>
 <p>
 </div>
+
 
