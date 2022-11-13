@@ -4,7 +4,7 @@ from random import randint
 
 WIDTH,HEIGHT =900,900
 SCALEW,SCALEH = 25,50
-Border = [(67, 153, 162, 255),(154, 239, 254, 255),(136, 219, 91, 255),(67, 153, 162, 255),(23, 57, 170, 255)]
+Border = [(67, 153, 162, 255),(66, 154, 162, 255),(37, 156, 163, 255),(76, 155, 162, 255),(136, 242, 255, 255),(65, 152, 162, 255),(154, 239, 254, 255),(136, 219, 91, 255),(137, 219, 92, 255),(67, 153, 162, 255),(23, 57, 170, 255)]
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Test Drive")
 
@@ -39,7 +39,6 @@ class PlayerCar:
     def forward(self):
         self.vel = min(self.vel + self.acc,self.max_vel)
         if bg.get_at((int(self.x), int(self.y))) in Border:
-            print("col")
             self.vel = -(self.vel)
         self.move()
         
@@ -70,7 +69,7 @@ def draw_window(car):
 
 
 line_start = None
-car = PlayerCar(6)
+car = PlayerCar(10)
 clock = pygame.time.Clock()
 rot = 0
 run = True
@@ -103,15 +102,20 @@ while run:
         bg = pygame.image.load(str(os.fspath(Path(__file__).resolve().parent / "track2.png")))
         bg = pygame.transform.rotate(bg,0)
         bg = pygame.transform.scale(bg,(900,900))
-        
+    if keys_pressed[pygame.K_3]:
+        TRACK = pygame.image.load(str(os.fspath(Path(__file__).resolve().parent / 'track3.png')))
+        bg = pygame.transform.rotate(bg,0)
+        TRACK = pygame.transform.scale(TRACK,(900,900))     
+    if keys_pressed[pygame.K_4]:
+        TRACK = pygame.image.load(str(os.fspath(Path(__file__).resolve().parent / 'track4.png')))
+        bg = pygame.transform.rotate(bg,0)
+        TRACK = pygame.transform.scale(TRACK,(900,900))
+            
     if keys_pressed[pygame.K_r]:
         CAR = pygame.image.load(str(os.fspath(Path(__file__).resolve().parent / "car{}.png".format(randint(1,9)))))
         CAR = pygame.transform.rotate(CAR,180)
         CAR = pygame.transform.scale(CAR,(SCALEW,SCALEH))
-    
-    if keys_pressed[pygame.K_z]:
         car.x,car.y = (58,200)
-    
     
     if not moved:
             car.momentum()             

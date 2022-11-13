@@ -39,7 +39,7 @@ while True:
             if 300 <= mouse[0] <= width/2+140 and height/2+100 <= mouse[1] <= height/2+160: 
                 import test
             if 300 <= mouse[0] <= width/2+140 and height/2+200 <= mouse[1] <= height/2+260: 
-                print("race")
+                import race
                   
     bg = pygame.image.load(str(os.fspath(Path(__file__).resolve().parent / 'blur.jpg'))).convert_alpha()
     bg = pygame.transform.scale(bg,(900,900))
