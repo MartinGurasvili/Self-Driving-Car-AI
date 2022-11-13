@@ -26,17 +26,38 @@
 <br>
 <div align="center">
 
-<img width="80%" src="https://user-images.githubusercontent.com/76784461/197297761-aeac7b35-7d82-492c-98f4-9caa1c2176fc.gif">
+<img width="100%" src="https://user-images.githubusercontent.com/76784461/197297761-aeac7b35-7d82-492c-98f4-9caa1c2176fc.gif">
 <h2 align="center">Race The AI</h2>
+  </div>
+  <p>TRAIN MODEL - this option is the training of the ai from scratch with graphing and all on all tracks as seen above
+    <br>TEST DRIVE - this option allows you to control a car around the different tracks
+    <br>YOU VS AI - this option is you driving against a already trained AI around the different tracks 
+  </p>
+  <div align="center">
 <img width="80%" src="https://user-images.githubusercontent.com/76784461/197297360-beb8d8d0-b821-4977-9bfc-605b249bc487.png">
+<h2 align="center">Controls</h2>
+    
+| KEY      | ACTION |
+| ----------- | ----------- |
+| 1,2,3,4      | Change Race Track       |
+| X   | Increase AI training speed        |
+  | Z      | Decrease AI training speed          |
+| L   | Toggle Input lines        |
+| R      | Reset car position and change car model     |
+  | W      | Car Acceleration     |
+| A   | Turn Car Left       |
+  | D      | Turn Car Right       |
+
+    
 <h2 align="center">Inner Works</h2>
 <img width="80%" src="https://user-images.githubusercontent.com/76784461/201476174-4e2852f1-a02e-401c-8fee-e93920431534.png">
-<p align="center">
+  </div>
+<p >
     Input: 7 distance from border <br>
     Output: 3 angle to turn  - Left or Right and speed to travel <br>
     TANH - Function<br>
     Using 100 starting cars - the best variations are mutated for the cars to stay alive for longer in the next generation<br>
 <p>
-</div>
+
 
 
