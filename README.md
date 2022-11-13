@@ -26,7 +26,7 @@
 <br>
 <div align="center">
 
-<img width="100%" src="https://user-images.githubusercontent.com/76784461/197297761-aeac7b35-7d82-492c-98f4-9caa1c2176fc.gif">
+<img width="100%" src="https://user-images.githubusercontent.com/76784461/201521842-1ca45d47-4773-4f8c-bb23-de3c701b4901.mp4">
 <h2 align="center">Race The AI</h2>
   </div>
   <p>TRAIN MODEL - this option is the training of the ai from scratch with graphing and all on all tracks as seen above
